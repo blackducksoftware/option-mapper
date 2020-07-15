@@ -46,7 +46,7 @@ do
   unset SED_SCRIPT
   for j in $OPT_DEPEND
   do
-    SED_SCRIPT="${SED_SCRIPT} -e s/${j}=/${j}=Invocation_${COUNT}/ "
+    SED_SCRIPT="${SED_SCRIPT} -e s/${j}=/${j}=invocation_${COUNT}_/ "
   done
   #echo $SED_SCRIPT
   if [ "$SED_SCRIPT" ]
